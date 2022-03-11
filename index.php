@@ -3,7 +3,7 @@
 $faqs=[
     'paragraph-1'=>[  
         [
-            'title'=>"1Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+            'title'=>"Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
     
             'paragraph'=>"La recente decisione della Corte di giustizia dell'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi.<br><br>
                             Da quando questa decisione è stata pubblicata il 13 maggio 2014, abbiamo lavorato incessantemente per uniformarci a essa. Si tratta di una procedura complessa perché dobbiamo valutare ogni singola richiesta e effettuare un bilanciamento tra il diritto dell'individuo a controllare i suoi dati personali ed il diritto di tutti di conoscere e distribuire le informazioni.<br><br>                        
@@ -14,7 +14,7 @@ $faqs=[
     ],
     'paragraph-2'=>[
         [
-            'title'=>"2Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
+            'title'=>"Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
     
             'paragraph'=>"Sappiamo che la sicurezza e la privacy sono importanti per te e lo sono anche per noi. Per noi è imperativo offrire un'elevata sicurezza e assicurarti che le tue informazioni sono al sicuro e accessibili quando ne hai bisogno.<br><br>
                             Siamo costantemente al lavoro per garantire un'elevata sicurezza, proteggere la tua privacy e rendere Google ancora più efficace ed efficiente per te. Spendiamo centinaia di milioni di dollari ogni anno per la sicurezza e ci avvaliamo di esperti di fama mondiale in materia di sicurezza dei dati per mantenere le tue informazioni al sicuro. Abbiamo inoltre sviluppato strumenti per la sicurezza e la privacy di facile utilizzo come Google Dashboard, la verifica in due passaggi e Impostazioni annunci. Così, per quanto riguarda le informazioni che condividi con Google, hai il massimo controllo.<br><br>                        
@@ -25,7 +25,7 @@ $faqs=[
     ],
     'paragraph-3'=>[
         [
-            'title'=>"3Perché il mio account è associato a un paese?",
+            'title'=>"Perché il mio account è associato a un paese?",
     
             'paragraph'=>"Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:<br><br>
                             La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:<br><br>
@@ -37,7 +37,7 @@ $faqs=[
     ],
     'paragraph-4'=>[
         [
-            'title'=>"4Stabilire il paese associato al tuo account",
+            'title'=>"Stabilire il paese associato al tuo account",
     
             'paragraph'=>"Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell'ultimo anno.<br><br>
                             I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe occorrere circa un anno per aggiornare l'associazione del paese.<br><br>      
@@ -47,37 +47,19 @@ $faqs=[
     ],
     'paragraph-5'=>[
         [
-            'title'=>"5Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
+            'title'=>"Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
     
             'paragraph'=>"I risultati di ricerca di Google rispecchiano i contenuti pubblicamente disponibili sul Web. I motori di ricerca non possono rimuovere i contenuti direttamente dai siti web, quindi rimuovere risultati di ricerca da Google non consente di rimuovere i contenuti dal Web. Se desideri rimuovere qualcosa dal Web, devi contattare il webmaster del sito su cui sono pubblicati i contenuti e chiedergli di apportare una modifica. Inoltre, se, ai sensi delle leggi europee per la protezione dei dati, desideri richiedere la rimozione di determinate informazioni su di te visualizzate nei risultati di ricerca di Google, fai clic qui. Una volta che i contenuti saranno stati rimossi e che Google avrà rilevato l'aggiornamento, le informazioni non verranno più visualizzate nei risultati di ricerca di Google. In caso di una richiesta di rimozione urgente, è inoltre possibile visitare la nostra pagina di assistenza per avere ulteriori informazioni.<br><br>",
         ],
     ],
     'paragraph-6'=>[
         [
-            'title'=>"6Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?",
+            'title'=>"Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?",
     
             'paragraph'=>"In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di URL referrer. Talvolta, l'URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili qui. Le query di ricerca o le informazioni contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio.",
         ],
     ],
 ];
-
-
-foreach ($faqs as $key=> $faq){
-   
-    foreach($faq as $singleFaq){
-        ?>
-        <div>
-            <?php
-            echo "<h1>". $singleFaq['title']."</h1>";
-            echo "<p>". $singleFaq['paragraph']."</p>";
-            
-
-           ?>
-        </div>
-        <?php
-
-    }
-}
 
 ?>
 
@@ -87,10 +69,52 @@ foreach ($faqs as $key=> $faq){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+ 
     <title>Document</title>
 </head>
 <body>
-    
-    
+    <header>
+        <div class="header-top">
+            <div class="logo-text">
+                <img src="./google-logo.png" alt="">
+                <span>Privacy e termini</span>
+            </div>
+            <div class="user-log">
+                <a href="#">
+                    <i class="fa-solid fa-grip-vertical"></i>
+
+                </a>
+                <span id="user">T</span>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li><a href="#">Introduzione</a></li>
+                    <li><a href="#">Norme sulla privacy</a></li>
+                    <li><a href="#">Termini di servizio</a></li>
+                    <li><a href="#">Tecnologie</a></li>
+                    <li><a href="#" class="active">Domande frequenti</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+        <?php
+            foreach ($faqs as $key=> $faq){  
+            foreach($faq as $singleFaq){     
+                echo '<div class="box">';        
+                    echo "<h2>". $singleFaq['title']."</h2>";
+                    echo "<p>". $singleFaq['paragraph']."</p>";
+                echo"</div>";
+            }
+            }
+       ?>
+
+    </main>
 </body>
 </html>
